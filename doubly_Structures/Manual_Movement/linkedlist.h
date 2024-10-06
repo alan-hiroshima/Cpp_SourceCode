@@ -7,6 +7,40 @@ class LinkedList {
 	node* tail;
 	int size;
 
+    void swapNode(node* dest, node* src){
+        if(dest->next == src){
+            src->prev = dest->prev;
+            dest->next = src->next;
+            dest->prev = src;
+            src->next = dest;
+
+            src->next->prev = src;
+            src->prev->next = src;
+
+            dest->next->prev = dest;
+            dest->prev->next = dest;
+            return;
+        }else if(dest->prev == src){
+            src->next = dest->next;
+            dest->prev = src->prev;
+            dest->next = src;
+            src->prev = dest;
+
+            src->next->prev = src;
+            src->prev->next = src;
+
+            dest->next->prev = dest;
+            dest->prev->next = dest;
+            return;
+        }
+
+        node* temp = dest->prev;
+        dest->next = src->next;
+        src->next = temp;
+
+        temp = 
+    }
+
 	public:
 	LinkedList() {
 		head = new node;
