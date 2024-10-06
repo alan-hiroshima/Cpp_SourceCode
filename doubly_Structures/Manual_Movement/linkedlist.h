@@ -1,4 +1,6 @@
 #include "node.h"
+#include <iostream>
+
 
 class LinkedList {
 	node* head;
@@ -94,7 +96,7 @@ class LinkedList {
 
 	// TODO trade places
 	void trade(string name1, string name2) {
-
+        return;
 	}
 
 	// TODO serve the request
