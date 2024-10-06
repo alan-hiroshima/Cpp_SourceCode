@@ -1,0 +1,29 @@
+You are working on a government agency managing the documentary requests of the residents of the city. Your office handles four issuance requests: 
+    B - Certificate of Live Birth 
+    M - Marriage Certificate 
+    C - Community Tax Certificate
+    D - Death Certificate.
+
+ 
+
+Your Person struct contains the first name, last name, age, and their requests in the form of an array. The array has a size of 4, representing the above issuance requests respectfully, with 1 indicating the person requests for it, and otherwise 0.
+
+ 
+
+Create a Doubly Linked List that will keep track of all the requests. You should support the following methods:
+
+void add(Person* p)
+This will add the person p to the last of the list. However if the person is a senior citizen (i.e., with age 60 or over), they shall be prioritized to the first of the list. Of course it follows that if there is an existing senior citizen in line, the new senior citizen will follow to the second, and so on. This should be done in an O(1) time complexity, but if not, a minimal deduction only.
+
+Person* serveRequest(char ch)
+This will serve the request given the character ch, whether B, M, C, D, and will accommodate the first person in the list by removing the said request (i.e., setting the request to 0) and returning the person reference. If the person no longer has requests remaining, you should free up the node. If there's no one requesting for that document, return null.
+
+Person* fastLane()
+This will prioritize the person with only one request, returning the person reference. If the person no longer has requests remaining, you should free up the node. If there's no one requesting for a single document, return null.
+
+void print()
+Prints the numbered list from the first of the list to the last, and vice-versa. Display the first name and the last name, with the age inside parenthesis, then the list of requests.
+
+ 
+
+For this problem, you can modify the linkedlist.h and the person.h and add your own methods as necessary.

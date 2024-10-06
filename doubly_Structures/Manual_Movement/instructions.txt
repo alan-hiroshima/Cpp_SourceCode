@@ -1,0 +1,35 @@
+You are working on a government agency managing the documentary requests of the residents of the city. Your office handles four issuance requests: 
+    B - Certificate of Live Birth
+    M - Marriage Certificate
+    C - Community Tax Certificate
+    D - Death Certificate.
+
+ 
+
+Your Person struct contains the first name, last name, age, and their requests in the form of an array. The array has a size of 4, representing the above issuance requests respectfully, with 1 indicating the person requests for it, and otherwise 0.
+
+ 
+
+Create a Doubly Linked List that will keep track of all the requests. You should support the following methods:
+
+void add(Person* p)
+    This time, the add method will only add the person to the end of the list. The movement of persons will be done manually using the following methods.
+
+void advance(string name, int forward)
+    This will advance the person bearing the name (either first name or last name) by forward units. If the units to move exceed the number of allowed units, move the person to the first in the list.
+
+void delay(string name, int back)
+    This will delay the person bearing the name (either first name or last name) by back units. If the units to move exceed the number of allowed units, move the person to the last in the list.
+
+void trade(string name1, string name2)
+    This will switch the places of the persons bearing the given names (either first name or last name).
+
+void print()
+    Prints the numbered list from the first of the list to the last, and vice-versa. Display the first name and the last name, with the age inside parenthesis, then the list of requests.
+
+
+Note that for all the movement methods (advance, delay, trade), you are only expected to move around nodes, so creating and deleting nodes, and changing the values of the person and the person reference of the node will NOT be allowed.
+
+ 
+
+For this problem, you can modify the linkedlist.h and the person.h and add your own methods as necessary.

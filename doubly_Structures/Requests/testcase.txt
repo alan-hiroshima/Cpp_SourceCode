@@ -1,0 +1,79 @@
+1.
+    Op: a
+    Name: JayVince Serato
+    Age: 21
+    Requests (B,M,C,D): 1 0 1 1
+    Op: a
+    Name: Jean Gunnhildr
+    Age: 26
+    Requests (B,M,C,D): 0 0 0 1
+    Op: a
+    Name: Shikanoko Noko
+    Age: 24
+    Requests (B,M,C,D): 0 0 1 0
+    Op: p
+    Counter: 3
+    From First:
+    1. JayVince Serato (21) - req: B C D
+    2. Jean Gunnhildr (26) - req: D
+    3. Shikanoko Noko (24) - req: C
+    From Last:
+    3. Shikanoko Noko (24) - req: C
+    2. Jean Gunnhildr (26) - req: D
+    1. JayVince Serato (21) - req: B C D
+    Op: x
+    Exiting...
+
+2. 
+    Op: a
+    Name: JayVince Serato
+    Age: 21
+    Requests (B,M,C,D): 1 0 1 1
+    Op: a
+    Name: Jean Gunnhildr
+    Age: 26
+    Requests (B,M,C,D): 0 0 0 1
+    Op: a
+    Name: Shikanoko Noko
+    Age: 64
+    Requests (B,M,C,D): 0 0 1 0
+    Op: p
+    Counter: 3
+    From First:
+    1. Shikanoko Noko (64) - req: C
+    2. JayVince Serato (21) - req: B C D
+    3. Jean Gunnhildr (26) - req: D
+    From Last:
+    3. Jean Gunnhildr (26) - req: D
+    2. JayVince Serato (21) - req: B C D
+    1. Shikanoko Noko (64) - req: C
+    Op: x
+    Exiting...
+
+3. 
+    Op: a
+    Name: JayVince Serato
+    Age: 21
+    Requests (B,M,C,D): 1 0 1 1
+    Op: a
+    Name: Jean Gunnhildr
+    Age: 67
+    Requests (B,M,C,D): 0 0 0 1
+    Op: a
+    Name: Shikanoko Noko
+    Age: 64
+    Requests (B,M,C,D): 0 0 1 0
+    Op: p
+    Counter: 3
+    From First:
+    1. Jean Gunnhildr (67) - req: D
+    2. Shikanoko Noko (64) - req: C
+    3. JayVince Serato (21) - req: B C D
+    From Last:
+    3. JayVince Serato (21) - req: B C D
+    2. Shikanoko Noko (64) - req: C
+    1. Jean Gunnhildr (67) - req: D
+    Op: x
+    Exiting...
+
+4.
