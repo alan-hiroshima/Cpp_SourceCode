@@ -10,55 +10,6 @@ class LinkedList : public List
     node *tail;
     int size;
 
-private:
-    int remEl(int num) // combination of all remove functions
-    {
-        node *temp = NULL;
-        int data;
-        if (head->elem == num)
-        {
-            temp = head;
-            data = temp->elem;
-            head = head->next;
-            size--;
-            if (size == 0)
-            {
-                tail = NULL;
-            }
-            delete temp;
-            return data;
-        }
-
-        node *curr = head;
-        while (curr != NULL)
-        {
-            if (curr->next->elem == num)
-            {
-                temp = curr->next;
-                data = temp->elem;
-                if (curr->next == tail)
-                {
-                    tail = curr;
-                    tail->next = NULL;
-                }
-                else
-                {
-                    curr->next = curr->next->next;
-                }
-                size--;
-                delete temp;
-                if (size == 0)
-                {
-                    head = NULL;
-                    tail = NULL;
-                }
-                return data;
-            }
-            curr = curr->next;
-        }
-        return -1;
-    }
-
 public:
     // ADD's
     void addNum(int num)
