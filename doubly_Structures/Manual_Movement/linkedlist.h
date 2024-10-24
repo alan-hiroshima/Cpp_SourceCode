@@ -38,7 +38,15 @@ class LinkedList {
         dest->next = src->next;
         src->next = temp;
 
-        temp = 
+        temp = src->prev;
+	src->prev = dest->prev;
+	dest->prev = temp;
+
+	src->next->prev = src;
+	src->prev->next = src;
+
+	dest->next->prev = dest;    
+	dest->prev->next = dest;
     }
 
 	public:
