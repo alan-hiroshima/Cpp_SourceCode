@@ -1,0 +1,27 @@
+The List ADT has the following operations already implemented in class:
+    • void add(int num): Inserts num into the list.
+    • int get(int pos): Returns the integer in the _pos_th position.
+    • int remove(int num): Removes the first occurrence of num from the list and returns the position to which it was found.
+
+Your task is to improve the following operations on a Dynamic Array List:
+    • void add(int num): Adds the num in the list.
+        (Note that when the array is already full, you are to dynamically allocate memory by adding 50% more to the capacity, rounded up).
+
+    • int remove(int num): Removes the first occurrence of num from the list and returns the position to which it was found.
+        (Note that when the number of elements reach 2/3 of the capacity, you 
+         are to reallocate the array by reducing its size by 25% rounded down.
+         Additionally, add the functionality to maintain a minimum capacity of 5. 
+         This will be true for any methods that remove elements from the array list).
+    
+    • void addAt(int num, int pos): Inserts num as the _pos_th position in the list. For this problem, assume that the value of pos will always be valid.
+        (Note that when the array is already full, you are to 
+         dynamically allocate memory similar to the add method, 
+         to accommodate the additional num entry.).
+
+    • int removeAt(int pos): Removes the element at the _pos_th position. For this problem, assume that there is an element in the _pos_th position. This returns the removed element.
+        (Note that when the number of elements reach 2/3 of the capacity,
+        you are to reallocate the array by reducing its size by 25%, similar 
+        to what is done in the remove method. Additionally, add the functionality 
+        to maintain a minimum capacity of 5. This will be true for any methods that remove elements from the array list).
+
+    •
